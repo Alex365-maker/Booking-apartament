@@ -164,6 +164,9 @@ function addPrice() {
     const Username = Object.keys(obj[`${monthContainer.innerText} ${yearContainer.innerText}`]);
     for (let i = 0; i < arrData.length; i++) {
       const userData = arrData[i]["booking"].split("-")
+      console.log(arrData[i]["booking"].length)
+      if(userData.length===1)
+      userData[1] = userData[0]
       for (let j = userData[0] - 1; j < userData[1]; j++) {
         arrDay[j].classList.add("selected");
         arrDay[j].querySelector(".name").innerText = Username[i]

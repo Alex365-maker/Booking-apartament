@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.header {
+  width: 100%;
+  box-shadow: -1px 6px 13px -5px rgba(34, 60, 80, 0.2);
+  margin: 0 auto;  
+}
+.contaiter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #3a4e58;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-size: 20px;  
+  font-weight: 700;
+}
+
+#calendar{
+  width: 50%;
+  margin-top: 5%;
+}
+
+.month {
+  margin: 0;
+  padding: 3rem 2rem 2rem;
+  background: #555555;
+  text-align: center;
+  color: #ffffff;
+  list-style: none;
+}
+
+.month li{
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.month li.prev,
+.month li.next{
+  cursor: pointer;
+}
+
+.month li.prev{
+  float: left;
+}
+
+.month li.next{
+  float: right;
+}
+
+.month li.year-name{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.weekdays{
+  margin: 0;
+  padding: 1rem 0;
+  background-color: #dddddd;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: left;
+}
+
+.weekdays li{
+  display: inline-block;
+  flex: 0 0 calc(100% / 7);
+  text-align: center;
+}
+
+.days {
+  margin: 0;
+  padding: 1rem 0;
+  background-color: #eeeeee;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: flex-start;
+}
+
+.days li{
+  padding: 1rem 0;
+  list-style: none;
+  display: inline-block;
+  flex: 0 0 calc(100% / 7);
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.days li:hover {
+  background-color: #8dff578a;
+  transition: 0.4s;
+  color: #555555;
+}
+.days li:active {
+  background-color: #78d74b;
+  color: #555555;
+  bottom: 0rem;
+}
+.days li.date-now{
+  color: #000;
+  font-weight: 700;
+}
+
+.fas {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin: 1rem;
+}
+
+.fa-angle-double-left {
+  border-top: 0.3rem solid #78d74b;
+  border-left: 0.3rem solid #78d74b;
+  transform: rotate(316deg);
+}
+
+.fa-angle-double-right {
+  border-top: 0.3rem solid #78d74b;
+  border-right: 0.3rem solid #78d74b;
+  transform: rotate(-316deg);
+}
+.fa-angle-double-left:active {
+  border-top: 0.3rem solid #8dff578a;
+  border-left: 0.3rem solid #8dff578a;
+}
+.fa-angle-double-right:active {
+  border-top: 0.3rem solid #8dff578a;
+  border-right: 0.3rem solid #8dff578a;
+}
+
+.price {
+  color: #555555;
+}
+
+.banner {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.selected{
+  background-color: #86e65a;
+}
+
+.bookingForm{
+display: flex;
+background-color: rgb(226, 225, 225);
+margin-top: 5%;
+padding: 10%;
+flex-direction: column;
+justify-content: space-between;
+height: 300px;
+}
+
+.bookingSubmit {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  border: none;
+} 
+.bookingSubmit:hover { background: rgb(53, 167, 110); }
+.bookingSubmit:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.sel {
+  width: 120px;
+  height: 30px;
+  border: 1px solid #999;
+  font-size: 18px;
+  color: rgb(33,147,90);
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 4px 4px #ccc;
+}
+
+.inputSum{
+  width: 50px;
+  margin-left:8px ;
+}
+
+.NameInput{
+  margin-left: 8px;
+}
+
+.emailInput{
+  margin-left: 11px;
+}

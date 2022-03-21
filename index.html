@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>apartment booking calendar</title>
+    <link type="text/css" rel="stylesheet" href="./style.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="contaiter">
+        <h1>APARTMENT BOOKING CALENDAR</h1>
+      </div>    
+    </header>
+    <body class="body">
+      <div class="contaiter">
+        <div id="calendar">
+          <ul class="month">
+              <li class="prev"><span class="fas fa-angle-double-left"></span></li>
+              <li class="next"><span class="fas fa-angle-double-right"></span></li>
+              <li class="month-name"></li>
+              <li class="year-name"></li>
+          </ul>
+          <ul class="weekdays">
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+              <li>Su</li>
+          </ul>
+          <ul class="days">            
+          </ul>
+        </div>
+        <form class="bookingForm">
+        <div>Аmount for accommodation: <input class="inputSum" value="0 rub." disabled=0/></div>
+        <div>Name:<input type="text" class="NameInput"/></div>
+        <div>Email:<input type="email" class="emailInput"/></div>
+        <div class="banner">Check-in time at the hotel</div>
+        <select class="sel">
+          <option value="10">Time 10:00</option>
+          <option value="12">Time 12:00</option>
+          <option value="14">Time 14:00</option>
+        </select>
+        <button class="bookingSubmit">To book</button>
+        </form>
+      </div>
+      
+    </body>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,4 +1,5 @@
-# DEMO https://alex365-maker.github.io/Booking-apartament/
+# DEMO:
+https://alex365-maker.github.io/Booking-apartament/
 <!-- Тестовое задание:
 Разработать календарь бронирования апартаментов.
 
